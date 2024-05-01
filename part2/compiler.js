@@ -71,6 +71,6 @@ var convertToObject = function (type) {
     var outputObject = visit(typeAlias);
     return outputObject;
 };
-// object type
+// example usage
 var object = convertToObject("type Button = {\n    variant1: \"solid\" | \"text\";\n    variant2: {\n        innerVariant: string;\n    };\n    variant3: 1 | 2;\n    variant4: true | false;\n    variant5: number;\n    variant6: string;\n    variant7: boolean;\n    };");
 console.log(object);
